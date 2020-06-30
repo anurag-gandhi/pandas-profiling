@@ -445,7 +445,7 @@ class ProfileReport(SerializeReport, object):
         df = rename_index(df)
 
         # Ensure that columns are strings
-        df.columns = df.columns.astype("str")
+        df.columns = df.columns.astype(str)
         return df
 
     @staticmethod
